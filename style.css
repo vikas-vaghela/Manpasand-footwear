@@ -903,3 +903,10 @@ nav ul li a{
 }
 
 }
+@media (max-width:768px){
+
+.product-card img{
+    height:180px !important;
+}
+
+}
