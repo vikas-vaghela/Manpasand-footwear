@@ -874,3 +874,11 @@ nav ul li a{
 }
 
 }
+
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
