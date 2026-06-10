@@ -1,0 +1,63 @@
+/* Card aur Info styling */
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-title { margin: 10px 0; color: #2c3e50; font-size: 1.2rem; }
+
+.product-info { 
+    margin: 5px 0; 
+    font-size: 0.9rem; 
+    color: #555; 
+}
+
+.product-info strong { color: #27ae60; }
+
+.buy-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+collection-banner {
+    padding: 20px 5%;
+    margin-bottom: 20px;
+}
+
+.collection-products {
+    padding: 20px 5%;
+}
+
+/* Image ko responsive banane ke liye */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.header1 {
+    /* Header ko top par pin karne ke liye */
+    position: sticky; 
+    top: 0;
+    
+    /* Ye zaroori hai taaki header content ke upar dikhe */
+    z-index: 1000; 
+    
+    /* Styling */
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Halka shadow taaki header alag dikhe */
+}
