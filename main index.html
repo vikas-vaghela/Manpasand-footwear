@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="manpasand footwear.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Manpasand Footwear</title>
+</head>
+<body>
+
+    <header class="header1">
+        <img src="manpasand.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="main index.html">Home</a></li>
+                <li><a href="manpasand footwear collection.html">Collection</a></li>
+                <li><a href="manpasand footwear contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search for Shoes..." id="search-input">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+   <section class="banner">
+    <h1>Welcome to Manpasand Footwear</h1>
+    <p>Best quality footwear at best prices!</p>
+    
+    <a href="manpasand footwear collection.html" class="shop-now-btn">Shop Now</a>
+</section>
+
+    <div class="category-filter">
+        <button onclick="filterCategory('all')"><i class="fas fa-th-large"></i> All</button>
+        <button onclick="filterCategory('men')"><i class="fas fa-male"></i> Men</button>
+        <button onclick="filterCategory('women')"><i class="fas fa-female"></i> Women</button>
+    </div>
+
+    <main class="product-container" id="product-list">
+    <div class="product-card" data-category="men">
+    <img src="client2.jpg" alt="Sport Shoes">
+    <h3 class="product-title">Formal shoes</h3>
+    <p class="product-info">Price: <strong>₹999</strong></p>
+    
+    <select class="product-size">
+        <option value="6">Size 6</option>
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+    </select>
+    
+    <input type="number" class="product-qty" value="1" min="1">
+    
+    <button class="buy-btn" onclick="autoOpenForm(this)">Buy Now</button>
+
+</div>
+       <div class="product-card" data-category="men">
+    <img src="client2,4.jpg" alt="Sport Shoes">
+    <h3 class="product-title">stylish sanddle</h3>
+    <p class="product-info">Price: <strong>₹999</strong></p>
+    
+    <select class="product-size">
+        <option value="6">Size 6</option>
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+    </select>
+    
+    <input type="number" class="product-qty" value="1" min="1">
+    
+    <button class="buy-btn" onclick="autoOpenForm(this)">Buy Now</button>
+
+</div>
+        <div class="product-card" data-category="men">
+    <img src="flipflop chapple.jpg" alt="Sport Shoes">
+    <h3 class="product-title">flipflop chapple</h3>
+    <p class="product-info">Price: <strong>₹999</strong></p>
+    
+    <select class="product-size">
+        <option value="6">Size 6</option>
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+    </select>
+    
+    <input type="number" class="product-qty" value="1" min="1">
+    
+    <button class="buy-btn" onclick="autoOpenForm(this)">Buy Now</button>
+
+</div>
+
+        <div class="product-card" data-category="men">
+    <img src="client22.jpg" alt="Sport Shoes">
+    <h3 class="product-title">Formal shoes</h3>
+    <p class="product-info">Price: <strong>₹999</strong></p>
+    
+    <select class="product-size">
+        <option value="6">Size 6</option>
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+    </select>
+    
+    <input type="number" class="product-qty" value="1" min="1">
+    
+    <button class="buy-btn" onclick="autoOpenForm(this)">Buy Now</button>
+
+</div>
+
+        <div class="product-card" data-category="men">
+    <img src="client22.jpg" alt="Sport Shoes">
+    <h3 class="product-title">Formal shoes</h3>
+    <p class="product-info">Price: <strong>₹999</strong></p>
+    
+    <select class="product-size">
+        <option value="6">Size 6</option>
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+    </select>
+    
+    <input type="number" class="product-qty" value="1" min="1">
+    
+    <button class="buy-btn" onclick="autoOpenForm(this)">Buy Now</button>
+
+</div>
+        
+        <div class="product-card" data-category="men">
+    <img src="client22.jpg" alt="Sport Shoes">
+    <h3 class="product-title">Formal shoes</h3>
+    <p class="product-info">Price: <strong>₹999</strong></p>
+    
+    <select class="product-size">
+        <option value="6">Size 6</option>
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+    </select>
+    
+    <input type="number" class="product-qty" value="1" min="1">
+    
+    <button class="buy-btn" onclick="autoOpenForm(this)">Buy Now</button>
+
+</div>
+        <div class="product-card" data-category="men">
+    <img src="client22.jpg" alt="Sport Shoes">
+    <h3 class="product-title">Formal shoes</h3>
+    <p class="product-info">Price: <strong>₹999</strong></p>
+    
+    <select class="product-size">
+        <option value="6">Size 6</option>
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+    </select>
+    
+    <input type="number" class="product-qty" value="1" min="1">
+    
+    <button class="buy-btn" onclick="autoOpenForm(this)">Buy Now</button>
+
+</div>
+        
+    </main>
+<div id="orderModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+        <h3>Order Details</h3>
+        <input type="text" id="custName" placeholder="Aapka Naam">
+        <input type="email" id="custEmail" placeholder="Email Address">
+        <input type="tel" id="custMobile" placeholder="Mobile Number">
+        <textarea id="custAddress" placeholder="Delivery Address"></textarea>
+        <select id="paymentMethod">
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="UPI">UPI</option>
+        </select>
+       <button class="confirm-btn" onclick="confirmOrder(event)">Order Confirm Karein</button>
+    </div>
+</div>
+    
+    <script>
+        function filterCategory(category) {
+            const products = document.getElementsByClassName('product-card');
+            for (let i = 0; i < products.length; i++) {
+                if (category === 'all' || products[i].getAttribute('data-category') === category) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
+                }
+            }
+        }
+        const searchInput = document.getElementById('search-input');
+        const products = document.getElementsByClassName('product-card');
+        searchInput.addEventListener('keyup', function() {
+            const filter = searchInput.value.toLowerCase();
+            for (let i = 0; i < products.length; i++) {
+                let title = products[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+                products[i].style.display = title.indexOf(filter) > -1 ? "" : "none";
+            }
+        });
+
+// --- Modal Functionality Start ---
+
+// Global variables
+let selectedProductName = "";
+let selectedProductPrice = "";
+
+// 1. Popup open karne ke liye
+function openOrderModal() {
+    document.getElementById('orderModal').style.display = 'block';
+}
+
+// 2. Popup band karne ke liye
+function closeOrderModal() {
+    document.getElementById('orderModal').style.display = 'none';
+}
+
+// 3. Product details uthane ke liye
+function autoOpenForm(buttonElement) {
+    let card = buttonElement.closest('.product-card');
+    selectedProductName = card.querySelector('.product-title').innerText;
+    selectedProductPrice = card.querySelector('.product-info strong').innerText;
+    window.currentSize = card.querySelector('.product-size').value;
+    window.currentQty = card.querySelector('.product-qty').value;
+    openOrderModal(); 
+}
+
+// 4. WhatsApp par bhejne ke liye (Button isi ko call karega)
+function confirmOrder(event) {
+    event.preventDefault(); // Page refresh hone se bachayega
+
+    // Form se values lena
+    const name = document.getElementById('custName').value;
+    const email = document.getElementById('custEmail').value;
+    const phone = document.getElementById('custMobile').value;
+    const address = document.getElementById('custAddress').value;
+    const payment = document.getElementById('paymentMethod').value;
+    
+    const whatsappNumber = "917096254826"; 
+
+    // WhatsApp Message
+    const message = `🛍️ New Order Received! 🛍️
+
+👤 Customer Details:
+* Name: ${name}
+* Email: ${email}
+* Mobile: ${phone}
+* Address: ${address}
+* Payment Mode: ${payment}
+
+👕 Product Details:
+* Item Name: ${selectedProductName}
+* Price: ${selectedProductPrice}
+* Size: ${window.currentSize}
+* Quantity: ${window.currentQty}`;
+
+    const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+    window.open(url, '_blank');
+}
+    </script>
+    
+</body>
+</html>
