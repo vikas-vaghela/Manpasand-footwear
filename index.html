@@ -172,7 +172,7 @@
     
     <script>
         function filterCategory(category) {
-            const products = document.getElementsByClassName('product-card');
+            const products = document.getElementsByClassName('product-card2');
             for (let i = 0; i < products.length; i++) {
                 if (category === 'all' || products[i].getAttribute('data-category') === category) {
                     products[i].style.display = "";
@@ -182,7 +182,7 @@
             }
         }
         const searchInput = document.getElementById('search-input');
-        const products = document.getElementsByClassName('product-card');
+        const products = document.getElementsByClassName('product-card2');
         searchInput.addEventListener('keyup', function() {
             const filter = searchInput.value.toLowerCase();
             for (let i = 0; i < products.length; i++) {
@@ -209,7 +209,7 @@ function closeOrderModal() {
 
 // 3. Product details uthane ke liye
 function autoOpenForm(buttonElement) {
-    let card = buttonElement.closest('.product-card');
+    let card = buttonElement.closest('.product-card2');
     selectedProductName = card.querySelector('.product-title').innerText;
     selectedProductPrice = card.querySelector('.product-info strong').innerText;
     window.currentSize = card.querySelector('.product-size').value;
