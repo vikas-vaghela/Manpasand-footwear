@@ -927,3 +927,30 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+.product-container {
+    display: flex;
+    flex-wrap: nowrap; /* Cards ko wrap hone se rokega */
+    overflow-x: auto;  /* Agar cards bahar nikle toh scroll aayega */
+    gap: 8px;          /* Cards ke beech thodi jagah */
+    padding: 10px;
+}
+
+.product-card {
+    flex: 0 0 30%;     /* Har card screen ka 30% lega (30*3 = 90%) */
+    min-width: 30%;    /* Isse card daba nahi hoga */
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;      /* Mobile par padding kam rakhein */
+    text-align: center;
+}
+
+/* Image ko chhota karne ke liye */
+.product-card img {
+    width: 100%;
+    height: 80px;      /* Height kam karni hogi taaki card fit ho */
+    object-fit: cover;
+}
