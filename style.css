@@ -954,3 +954,69 @@ img {
     height: 80px;      /* Height kam karni hogi taaki card fit ho */
     object-fit: cover;
 }
+
+/* Container ko grid banayein */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mobile par 3 columns */
+    gap: 8px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Card 2 Styling */
+.product-card2 {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 6px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Button ko hamesha niche rakhega */
+}
+
+/* Image ko compact karein */
+.product-card2 img {
+    width: 100%;
+    height: 70px; /* Height fix kar dein taaki layout na hile */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Text chhota aur clean */
+.product-card2 h3 {
+    font-size: 10px;
+    margin: 6px 0 2px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product-card2 p {
+    font-size: 9px;
+    margin: 2px 0;
+    color: #555;
+}
+
+/* Dropdown aur Button ki styling */
+.product-card2 select, 
+.product-card2 input, 
+.product-card2 button {
+    width: 100%;
+    padding: 3px;
+    font-size: 9px;
+    margin-top: 4px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.product-card2 button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
