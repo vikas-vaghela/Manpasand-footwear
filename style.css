@@ -910,3 +910,20 @@ nav ul li a{
 }
 
 }
+
+/* Mobile ke liye settings */
+@media (max-width: 600px) {
+  .product-card {
+    width: 100% !important; /* Product card puri screen le lega */
+    margin: 0;
+  }
+  .navbar {
+    flex-direction: column; /* Menu items niche aa jayenge */
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
